@@ -1,0 +1,55 @@
+body {
+    height: 100%;
+    font-family: sans-serif;
+    background-color: rgb(43, 43, 43);
+    color: white;
+}
+
+h1 {
+    margin-top: 0px;
+}
+
+p {
+    margin: 0px;
+}
+
+.topText {
+    display: flex;
+    flex-direction: column;
+}
+
+.introParagraph {
+    margin: 0px;
+}
+
+.dataEntryArea {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.entryBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 20px;
+    width: 500px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+input {
+    width: 118px;
+}
+
+table, th, td {
+    border: 1px solid;
+    color: black;
+    background-color: rgb(225, 255, 0);
+    width: 99vw;
+}
+
+th {
+    border: 3px solid;
+    background-color:rgb(255, 174, 0)
+}

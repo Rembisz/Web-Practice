@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima&display=swap');
+
+/* This @import rule imports a font called Agdasima from fonts.google.com. Placing it at the top of the css file results in the rule being executed first to avoid font irregularities. */
+
+body {
+    margin: 40px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    font-family: 'Agdasima', sans-serif;
+    background-color: black;
+}
+
+/* Specific properties and values assigned to the body element are inherited by child elements within it. For example, this font-family property. */
+
+.article {
+    position: absolute;
+    top: 45px;
+    left: 0px;
+    font-size: 2rem;
+    color: #FFFFFF;
+}
+
+.backgroundText {
+    position: absolute;
+    top: 35px;
+    left: 10px;
+    font-size: 3rem;
+    color: rgba(255,255,255,0.3);
+}
+
+/* Both article and backgroundText classed p elements are positioned absolutely relative to the body. This means that they can be stacked, but will still move along with the body element. This is as opposed to being absolutely positioned with the html element, which would cause problems when adding things alongside the body such as ADs or divs. */
+
+.container {
+    display: flex; 
+    flex-direction: column;
+}

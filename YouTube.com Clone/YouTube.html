@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>YouTube Clone</title>
+      <link rel="stylesheet" href="styles/general.css">
+      <link rel="stylesheet" href="styles/video.css">
+      <link rel="stylesheet" href="styles/header.css">
+      <link rel="stylesheet" href="styles/guide.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Agdasima&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="header">
+      <div class="leftSection">
+        <img class="hamburgerMenu" src="Icons/ThreeBars.webp" alt="Bars">
+        <img class="websiteLogo" src="Icons/YouTube.webp" alt="YouTube">
+      </div>
+      <div class="middleSection">
+        <div class="searchBarContainer">
+        <input class="searchBar" type="text" placeholder="Search" onclick="">
+        </div>
+        <button class="searchButton"><img class="searchIcon" src="Icons/Search.webp" alt="Search"></button>
+        <img class="mic" src="Icons/Mic.webp" alt="Mic">
+      </div>
+      <div class="rightSection">
+        <img class="createButton" src="Icons/Create.webp" alt="Create">
+        <img class="bellButton" src="Icons/Bell.webp" alt="Bell">
+        <img class="userProfile" src="ProfilePhotos/Me.jpg" alt="Profile">
+      </div>
+    </div>
+    <div class="contentContainer">
+      <div class="guide">
+        <div class="guideFirstOption"><img class="homeIcon" src="Icons/Home.webp" alt="Home"><p class="guideOptionText">Home</p></div>
+        <div class="guideOption"><img class="homeIcon" src="Icons/Shorts.webp" alt="Shorts"><p class="guideOptionText">Shorts</p></div>
+        <div class="guideOption"><img class="homeIcon" src="Icons/Subscriptions.webp" alt="Subscriptions"><p class="guideOptionText">Subscriptions</p></div>
+      </div>
+      <div class="content">
+        <div class="filterTerms">
+          <div class="firstTerm"><p class="firstTermText">All</p></div>
+          <div class="Term"><p>Electric guitar</p></div>
+          <div class="Term"><p>Music</p></div>
+          <div class="Term"><p>Gaming</p></div>
+          <div class="Term"><p>Media theories</p></div>
+          <div class="Term"><p>Keyboards</p></div>
+          <div class="Term"><p>Mixes</p></div>
+          <div class="Term"><p>Sheet music</p></div>
+          <div class="Term"><p>Podcasts</p></div>
+          <div class="Term"><p>Classical guitar</p></div>
+          <div class="Term"><p>Kawasaki motorcycles</p></div>
+          <div class="Term"><p>Driving</p></div>
+          <div class="termGradient"></div>
+          <div class="termScrollArrow"><button></button></div>
+        </div>
+        <div class="videoPreviewGrid">
+          <div class="videoPreview">
+            <div class="thumbnailContainer">
+              <img class="thumbnail" src="Thumbnails/Lucid.jpg" alt="10 Guitarists Solo Over The Same Track! [2023]">
+            </div>
+            <div class="videoInfo">
+              <div class="bookBar">
+                <p class="bookText">Book Now</p><i class="fa fa-external-link" style="color: rgb(62, 166, 255); font-size: 20px; margin-top: 5px; margin-left: 6px;"></i>
+              </div>
+              <div class="profilePhotoContainer">
+                <img class="profilePhoto" src="ProfilePhotos/Lucid.jpg" alt="Paul Davids' Photo">
+              </div>
+              <div class="description">
+                <p class="title">The all-electric Lucid Air. Schedule your Test Drive today.</p>
+                <div>
+                  <span class="adBadge">Ad</span>
+                  <p class="profileName"><strong>&middot;</strong> Lucid Motors</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="videoPreview">
+            <div class="thumbnailContainer">
+              <img class="thumbnail" src="Thumbnails/PaulDavids.webp" alt="10 Guitarists Solo Over The Same Track! [2023]">
+            </div>
+            <div class="videoInfo">
+              <div class="profilePhotoContainer">
+                <img class="profilePhoto" src="ProfilePhotos/PaulDavids.jpg" alt="Paul Davids' Photo">
+              </div>
+              <div class="description">
+                <p class="title">10 GUITARISTS SOLO OVER THE SAME TRACK! [2023]</p>
+                <p class="profileName">Paul Davids</p>
+                <p class="videoStats">703k views <strong>&middot;</strong> 1 month ago</p>
+              </div>
+            </div>
+          </div>
+          <div class="videoPreview">
+            <div class="thumbnailContainer">
+              <img class="thumbnail" src="Thumbnails/LeonLush.webp" alt="Entited Rich Brat Gets What She Deserves (pepper spray x2)">
+            </div>
+            <div class="videoInfo">
+              <div class="profilePhotoContainer">
+                <img class="profilePhoto" src="ProfilePhotos/LeonLush.jpg" alt="Leon's Photo">
+              </div>
+              <div class="description">
+                <p class="title">Entited Rich Brat Gets What She Deserves (pepper spray x2)</p>
+                <p class="profileName">LeonLush</p>
+                <p class="videoStats">155k views <strong>&middot;</strong> 9 hours ago</p>
+              </div>
+            </div>
+          </div>
+          <div class="videoPreview">
+            <div class="thumbnailContainer">
+              <img class="thumbnail" src="Thumbnails/OldGuy.webp" alt="Music Theory in 16 Minutes">
+            </div>
+            <div class="videoInfo">
+              <div class="profilePhotoContainer">
+                <img class="profilePhoto" src="ProfilePhotos/OldGuy.jpg" alt="Guy Michelmore's Photo">
+              </div>
+              <div class="description">
+                <p class="title">Music Theory in 16 Minutes</p>
+                <p class="profileName">Guy Michelmore</p>
+                <p class="videoStats">3.6M views <strong>&middot;</strong> 3 years ago</p>
+              </div>
+            </div>
+          </div>
+          <div class="videoPreview">
+            <div class="thumbnailContainer">
+              <img class="thumbnail" src="Thumbnails/DanDanTheFireman.webp" alt="Why Cant Cruisers Stay Upright? - Moto Madness Review">
+            </div>
+            <div class="videoInfo">
+              <div class="profilePhotoContainer">
+                <img class="profilePhoto" src="ProfilePhotos/DanDanTheFireman.jpg" alt="DanDan's Photo">
+              </div>
+              <div class="description">
+                <p class="title">Why Cant Cruisers Stay Upright? - Moto Madness Review</p>
+                <p class="profileName">DanDanTheFireman</p>
+                <p class="videoStats">137k views <strong>&middot;</strong> 4 month ago</p>
+              </div>
+            </div>
+          </div>
+          <div class="videoPreview">
+            <div class="thumbnailContainer">
+              <img class="thumbnail" src="Thumbnails/Major-Minor-Sus.webp" alt="Turning major/minor chords into sus chords #Shorts">
+            </div>
+            <div class="videoInfo">
+              <div class="profilePhotoContainer">
+                <img class="profilePhoto" src="ProfilePhotos/SixStringSage.jpg" alt="SixStringSage's Photo">
+              </div>
+              <div class="description">
+                <p class="title">Turning major/minor chords into sus chords #Shorts</p>
+                <p class="profileName">SixStringSage</p>
+                <p class="videoStats">51 views <strong>&middot;</strong> 13 hours ago</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

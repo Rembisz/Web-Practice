@@ -1,0 +1,113 @@
+.filterTerms {
+  display: flex;
+  justify-content: start;
+}
+
+.firstTerm {
+  background-color: white;
+  margin-left: 24px;
+}
+
+.firstTermText {
+  color: black;
+}
+
+.Term {
+  background-color: rgb(48, 48, 48);
+}
+
+.Term, .firstTerm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  border-radius: 8px;
+  height: 32px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-top: 12px;
+  margin-right: 12px;
+  margin-bottom: 12px;
+}
+
+.termGradient {
+  display: flex;
+  justify-content: center;
+  width: 106px;
+  height: 56px;
+}
+
+.videoPreviewGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 100px;
+  padding-top: 24px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.videoPreview {
+  display: grid;
+  grid-template-rows: 1fr 80px;
+}
+
+.videoInfo {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+}
+
+.description {
+  display: grid;
+  grid-template-rows: 2fr 1fr 1fr;
+}
+
+.title {
+  font-weight: 500;
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+
+.profileName, .videoStats {
+  color: rgb(170, 170, 170);
+  font-size: 14px;
+  display: inline-block;
+}
+
+.profilePhotoContainer {
+  margin-top: 12px;
+  margin-right: 12px;
+}
+
+.profilePhoto {
+  width: 36px;
+  border-radius: 18px;
+}
+
+.thumbnail {
+  border-radius: 12px;
+  width: 100%;
+}
+
+.adBadge {
+  font-family: Roboto, Arial;
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+}
+
+.bookBar {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  margin-top: 90px;
+  background-color: rgba(62, 166, 255, 0.5);
+  width: 26.8%;
+  height: 32px;
+  border-radius: 16px;
+}
+
+.bookText {
+  margin-top: 7px;
+  font-size: 14px;
+  color: rgb(62, 166, 255)
+}
