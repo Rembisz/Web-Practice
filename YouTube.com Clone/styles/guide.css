@@ -1,9 +1,21 @@
 .guide {
+  padding: 12px;
+}
+
+.guide, .sectionOne, .sectionTwo {
   display: flex;
   justify-content: start;
   flex-direction: column;
   width: 216px;
-  padding: 12px;
+}
+
+.sectionTwo {
+  border-style: solid;
+  border-width: 0px;
+  border-top-width: 1px;
+  border-color: rgb(48, 48, 48);
+  margin-top: 12px;
+  padding-top: 12px;
 }
 
 .guideFirstOption {
@@ -29,6 +41,6 @@
   margin-left: 24px;
 }
 
-.homeIcon {
+.guideIcon {
   width: 24px;
 }
