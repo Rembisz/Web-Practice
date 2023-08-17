@@ -11,6 +11,10 @@ body {
     background-color: black;
 }
 
+p {
+  color: white;
+}
+
 /* Specific properties and values assigned to the body element are inherited by child elements within it. For example, this font-family property. */
 
 .article {
@@ -29,9 +33,177 @@ body {
     color: rgba(255,255,255,0.3);
 }
 
-/* Both article and backgroundText classed p elements are positioned absolutely relative to the body. This means that they can be stacked, but will still move along with the body element. This is as opposed to being absolutely positioned with the html element, which would cause problems when adding things alongside the body such as ADs or divs. */
+/* Both article and backgroundText classed p elements are positioned absolutely relative to the body. This means that they can be stacked, but will still move along with the body element. This is as opposed to being absolutely positioned with the html element, which would cause problems when adding things alongside the body such as ADs or divs.*/
 
 .container {
-    display: flex; 
-    flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
+
+/*container div contains each practice item in a 2 column by x row grid.*/
+
+.animationDiv {
+  display: flex;
+  justify-content: space-around;
+}
+
+.animation {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation: 5s infinite animationOne;
+}
+
+@keyframes animationOne {
+  0% {background-color: red;}
+  20% {background-color: yellow;}
+  40% {background-color: blue;}
+  60% {background-color: green;}
+  80% {background-color: violet;}
+  100% {background-color: red;}
+}
+
+/*The background color for this div should shift nicely.*/
+
+.animatedText {
+  display: inline-block;
+  width: 200px;
+  animation: 3s animationTwo;
+}
+
+@keyframes animationTwo {
+  from {margin-left: 300px; width: 300px;}
+  75% {font-size: 300%; margin-left: 75px; width: 150px;}
+  to {margin-left: 0px; width: 100px};
+}
+
+/*This text should grow, shrink, and move from the left when the page is loaded.*/
+
+.headtofootGridOne {
+  display: grid;
+  grid-template-rows: 1fr 4fr 1fr;
+}
+
+.headOne, .headTwo {
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: red;
+}
+
+.footOne, .footTwo {
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: blue;
+}
+
+.lefttorightGridOne {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+
+.leftOne {
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: green;
+}
+
+.rightOne {
+  display: flex;
+  justify-content: center;
+  color: black;
+  background-color: yellow;
+}
+
+.midGridOne {
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+}
+
+.titleOne {
+  display: flex;
+  justify-content: center;
+  color: black;
+  background-color: violet;
+}
+
+.articleOne {
+  display: flex;
+  justify-content: center;
+  color: black;
+  background-color: white;
+}
+
+/*Layout one is a flexible example layout with several sections.*/
+
+.headtofoodGridTwo {
+  display: grid;
+  grid-template-rows: 1fr 3fr 2fr 1fr;
+}
+
+.lefttorightGridTwoA {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.leftTwoA {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+
+.sideBarTwoA {
+  display: flex;
+  justify-content: center;
+  color: black;
+  background-color: violet;
+}
+
+.sideBarTwoB {
+  display: flex;
+  justify-content: center;
+  color: black;
+  background-color: lightgreen;
+}
+
+.rightTwoA {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+}
+
+.mainTwoA {
+  display: flex;
+  justify-content: center;
+  color: black;
+  background-color: orange;
+}
+
+.mainTwoB {
+  display: flex;
+  justify-content: center;
+  color: black;
+  background-color: gray;
+}
+
+.lefttorightGridTwoB {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.leftTwoB {
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: darkgreen;
+}
+
+.rightTwoB {
+  display: flex;
+  justify-content: center;
+  color: black;
+  background-color: pink;
+}
+
+/*Layout two has few more sections oddly placed. The center horizontal grids require a containing div with no class in order to specify the end of one grid and the start of the next.*/
