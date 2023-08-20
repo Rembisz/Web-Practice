@@ -150,6 +150,7 @@ p {
 .lefttorightGridTwoA {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
 }
 
 .leftTwoA {
@@ -209,4 +210,9 @@ p {
   background-color: pink;
 }
 
-/*Layout two has few more sections oddly placed. The center horizontal grids require a containing div with no class in order to specify the end of one grid and the start of the next.*/
+.containerOne {
+  display: flex;
+  justify-content: center;
+}
+
+/*Layout two has few more sections oddly placed.*/
