@@ -7,9 +7,15 @@ p {
   font-family: "Roboto Condensed", sans-serif;
 }
 
+button {
+  background-color: white;
+  font-family: "Black Ops One", sans-serif;
+  border-width: 0px;
+}
+
 .layoutGrid {
   display: grid;
-  grid-template-columns: 1fr 2fr 3fr;
+  grid-template-columns: 2fr 1fr 4fr 6fr;
 }
 
 .pageInfo {
@@ -45,7 +51,7 @@ p {
   display:flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(191, 0, 0);
+  background-color: rgb(180, 0, 0);
   border-radius: 20px;
   padding-left: 15px;
   padding-right: 15px;
@@ -68,6 +74,30 @@ p {
 }
 
 .timeline {
+  display: grid;
+  grid-template-rows: 1.5fr 15fr;
+}
+
+.timelineBody {
+  background-color: white;
+}
+
+.timelineContent {
   display: flex;
   flex-direction: column;
+  align-items: left;
+}
+
+.sixty {
+  background-image: url("checkeredFlagLeft.webp");
+  margin-top: 57px;
+}
+
+.sixtyfive {
+  background-image: url("checkeredFlagRight.webp");
+  margin-top: 78px;
+}
+
+.seventy, .seventyfive, .eighty, .eightyfive, .ninety, .ninetyfive, .twoK, .twoKFive, .twoKTen, .twoKFifteen, .twoKTwenty, .today {
+  margin-top: 60px;
 }
