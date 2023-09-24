@@ -75,6 +75,7 @@
 .videoInfo {
   display: grid;
   grid-template-columns: 48px 1fr;
+  width: 100%;
 }
 
 .description {
@@ -118,10 +119,9 @@
 .bookBar {
   display: flex;
   justify-content: center;
-  position: absolute;
-  margin-top: 90px;
+  position: relative;
   background-color: rgba(62, 166, 255, 0.5);
-  width: 26.8%;
+  width: 860%;
   height: 32px;
   border-radius: 16px;
 }
@@ -130,4 +130,12 @@
   margin-top: 7px;
   font-size: 14px;
   color: rgb(62, 166, 255)
+}
+ 
+@media only screen
+and (max-width: 1400px)
+and (min-width: 480px) {
+  .videoPreviewGrid {
+    width: 90%;
+  }
 }
