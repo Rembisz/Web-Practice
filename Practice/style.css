@@ -216,3 +216,10 @@ p {
 }
 
 /*Layout two has few more sections oddly placed.*/
+
+@media only screen
+and (max-width: 880px) {
+  .headtofootGridTwo {
+    display: none;
+  }
+}
